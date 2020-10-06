@@ -2,16 +2,16 @@
 # File: guessinggame.sh  Author: Ahmed Qamesh
 # Aim: Guess the number of files in a directory
 
-allFiles = $(ls | wc -l)
-guessNr = 1
 
+
+allFiles=$(ls | wc -l)
+guessNr=1
 patt="^[0-9]*$"
 max=100  #default value if input parameter is invalid
 if [[ $1 =~ $patt ]] && [[ $1 -gt allFiles ]]
 then
 	max=$1
 fi
-
 echo "Guess the number of files in the $PWD directory. Enter an integer between 0 and $max"
 while [[ $guess -ne $allFiles ]]
 do 
@@ -37,5 +37,5 @@ if [[ guessNr -eq 1 ]]
 then
     echo -e "\nINCREDIBLE!!! You guessed correctly on your very first try!!\n"
 else   
-    echo -e "\nCongratulations! You guessed correctly with $guessNbr tries!!!\n"
+    echo -e "\nCongratulations! You guessed correctly with $guessNr tries!!!\n"
 fi
