@@ -1,4 +1,3 @@
-# the-unix-workbench-assignment
-This assignment is designed to test your facility for using Git and GitHub, creating makefiles, and writing Bash programs.
-First you will create a program called guessinggame.sh. This program will continuously ask the user to guess the number of files in the current directory, until they guess the correct number. The user will be informed if their guess is too high or too low. Once the user guesses the correct number of files in the current directory they should be congratulated.
-
+Peer-graded Assignment: Bash, Make, Git, and GitHub
+Tue Oct  6 10:14:46 CEST 2020
+1
